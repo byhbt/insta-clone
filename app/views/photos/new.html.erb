@@ -4,7 +4,7 @@ Upload new photo
   <%= form_for @photo do |f| %>
     <div class="form-group">
       <%= f.label :photo %>
-      <%= f.drag_and_drop_file_field :image, 'Drag and drop images here!' %>
+      <%= f.drag_and_drop_file_field :image, 'Drag and drop images here!', accept: 'image/png, image/jpeg, image/gif, image/tiff' %>
     </div>
 
     <div class="form-group">

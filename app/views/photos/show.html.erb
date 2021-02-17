@@ -1,0 +1,5 @@
+<div class="row">
+    <% if @photo.image.attached? %>
+    <%= image_tag url_for(@photo.image), class: 'd-block w-100' %>
+    <% end %>
+</div>
